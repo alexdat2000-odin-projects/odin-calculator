@@ -1,0 +1,67 @@
+@font-face {
+  font-family: digital7;
+  src: url('static/digital-7.ttf');
+}
+
+body {
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  background-color: #5B5C5E;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#display {
+  width: 100%;
+  box-sizing: border-box;
+  background: #CEDFCF;
+  font-size: 44px;
+  font-family: digital7, serif;
+  text-align: right;
+  padding: 5px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  border-radius: 5px;
+
+  border: none;
+}
+
+.button.equal {
+  width: 110px;
+}
+
+.equal {
+  background-color: orange;
+}
+
+.operation {
+  background-color: lightblue;
+}
+
+.edit {
+  background-color: lightyellow;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/static/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/static/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/static/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+
+  <body>
+    <div id="body">
+      <div id="display">
+        0
+      </div>
+      <div class="button-row">
+        <button type="button" class="button edit" onclick="clearDisplay()">C</button>
+        <button type="button" class="button edit" onclick="backspace()">⌫</button>
+        <button type="button" class="button operation" onclick="neg()">±</button>
+        <button type="button" class="button operation" onclick="operation('/')">/</button>
+      </div>
+      <div class="button-row">
+        <button type="button" class="button number" onclick="press(7)">7</button>
+        <button type="button" class="button number" onclick="press(8)">8</button>
+        <button type="button" class="button number" onclick="press(9)">9</button>
+        <button type="button" class="button operation" onclick="operation('*')">×</button>
+      </div>
+      <div class="button-row">
+        <button type="button" class="button number" onclick="press(4)">4</button>
+        <button type="button" class="button number" onclick="press(5)">5</button>
+        <button type="button" class="button number" onclick="press(6)">6</button>
+        <button type="button" class="button operation" onclick="operation('-')">-</button>
+      </div>
+      <div class="button-row">
+        <button type="button" class="button number" onclick="press(1)">1</button>
+        <button type="button" class="button number" onclick="press(2)">2</button>
+        <button type="button" class="button number" onclick="press(3)">3</button>
+        <button type="button" class="button operation" onclick="operation('+')">+</button>
+      </div>
+      <div class="button-row">
+        <button type="button" class="button number" onclick="press(0)">0</button>
+        <button type="button" class="button dot" onclick="dot()">.</button>
+        <button type="button" class="button equal" onclick="calc()">=</button>
+      </div>
+    </div>
+  </body>
+</html>
